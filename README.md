@@ -44,7 +44,7 @@ A aplicação deve contemplar as seguintes diretrizes:
 
 1. Faça um fork desse projeto em sua conta pessoal no GitHub;
 2. Desenvolva o desafio Frontend da Live On;
-3. Adicione como membro do repositório um dos seguintes usuários do GitHub ([@luoldrigues](https://github.com/luoldrigues), [@hurick](https://github.com/hurick) e [@BrunaCriscuolo](https://github.com/BrunaCriscuolo));
+3. Adicione como membro do repositório um dos seguintes usuários do GitHub ([@luoldrigues](https://github.com/luoldrigues), [@hurick](https://github.com/hurick), [@BrunaCriscuolo](https://github.com/BrunaCriscuolo) e [@luis-grizzo](https://github.com/luis-grizzo));
 
 ## Avaliação
 
