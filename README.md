@@ -38,7 +38,7 @@ A aplicação deve contemplar as seguintes diretrizes:
 - Responsividade da aplicação;
 - [TypeScript](https://typescriptlang.org);
 - Pré-processadores CSS [(Sass ou SCSS)](https://sass-lang.com);
-- Utilização de [Redux](https://redux.js.org);
+- Utilização da [contextAPI](https://reactjs.org/docs/context.html) ou [Redux](https://redux.js.org);
 
 ## Como entregar o desafio?
 
