@@ -45,12 +45,12 @@ A aplicação deve contemplar as seguintes diretrizes:
 1. Faça um fork desse projeto em sua conta pessoal no GitHub;
 2. Desenvolva o desafio Frontend da Live On;
 3. Adicione como membro do repositório o seguinte usuário do GitHub [@vagas-liveonsolutions](https://github.com/vagas-liveonsolutions);
-4. Por fim, envie um email informando que concluiu o desafio p/ [vagas@liveonbaas.com](mailto:vagas@liveonbaas.com). (coloque no assunto o nome do desafio)
+4. Por fim, envie um email informando que concluiu o desafio p/ [vagas@liveonsolutions.com](mailto:vagas@liveonsolutions.com). (coloque no assunto o nome do desafio)
 
 ## Avaliação
 
 Seu projeto será avaliado de acordo com a qualidade e organização de código, arquitetura, além de seus conhecimentos sobre a biblioteca React, JavaScript ou TypeScript, padronizações, portanto, esperamos que seus conhecimentos estejam afiados!
 
-Dito isso, depois de nos dar acesso ao repositório do seu teste, pedimos que por favor nos avise através do email [vagas@liveonbaas.com](mailto:vagas@liveonbaas.com). Avaliaremos o mais rápido possível e também garantimos o feedback!
+Dito isso, depois de nos dar acesso ao repositório do seu teste, pedimos que por favor nos avise através do email [vagas@liveonsolutions.com](mailto:vagas@liveonsolutions.com). Avaliaremos o mais rápido possível e também garantimos o feedback!
 
 A equipe Frontend da Live On te deseja boa sorte e esperamos que você se divirta com o desafio!
