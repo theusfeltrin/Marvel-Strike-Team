@@ -1,5 +1,5 @@
 # Desafio Frontend
-Como parte do processo seletivo da Live On, utilizamos esse desafio técnico para avaliar seus conhecimento técnicos e habilidades com o requisito da vaga, lembrando apenas, que claro, o teste deve ser feito por você e apenas você, no conforto de seu castelo!
+Como parte do processo seletivo do MaaS, utilizamos esse desafio técnico para avaliar seus conhecimento técnicos e habilidades com o requisito da vaga, lembrando apenas, que claro, o teste deve ser feito por você e apenas você, no conforto de seu castelo!
 
 ## Descrição do desafio
 
@@ -44,7 +44,7 @@ A aplicação deve contemplar as seguintes diretrizes:
 
 1. Faça um fork desse projeto em sua conta pessoal no GitHub;
 2. Desenvolva o desafio Frontend da Live On;
-3. Adicione como membro do repositório o seguinte usuário do GitHub [@vagas-liveonsolutions](https://github.com/vagas-liveonsolutions);
+3. Adicione como membro do repositório o seguinte usuário do GitHub [@vagas-modalservices](https://github.com/vagas-modalservices);
 4. Por fim, envie um email informando que concluiu o desafio p/ [vagas@liveonsolutions.com](mailto:vagas@liveonsolutions.com). (coloque no assunto o nome do desafio)
 
 ## Avaliação
