@@ -1,0 +1,52 @@
+@use '../../styles/themes/light' as *
+
+.wrapper
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.container
+  display: flex
+  justify-content: center
+  width: 74%
+
+.header
+  display: flex
+  width: 100%
+  height: 80px
+  align-content: center
+  align-items: center
+  justify-content: center
+  background-color: $header_background
+
+.headerContainer
+  justify-content: space-between
+  align-items: center
+
+.logo
+  display: flex
+  align-items: center
+  img
+    width: 50px
+    height: auto
+  span
+    color: $header_text
+    font-size: 19px
+    font-weight: bold
+
+.headerButton
+  display: flex
+  align-items: center
+  padding: 8px
+  height: auto
+  background-color: $button_background
+  color: $button_text
+  border-radius: 2px 12px
+  svg
+    margin-left: 7px
+
+.main
+  display: flex
+  width: 100%
+  flex-direction: column
+  align-items: center

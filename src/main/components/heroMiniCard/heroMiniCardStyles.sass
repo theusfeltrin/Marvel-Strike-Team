@@ -1,0 +1,50 @@
+@use '../../styles/themes/light' as *
+
+.cardWrapper
+  display: flex
+  flex-direction: column
+  width: 23%
+  height: 300px
+  border-radius: 6px 12px
+  overflow: hidden
+  margin: 10px 0px
+  box-shadow: 0px 4px 4px $default_border
+  .heroImgDiv
+    display: flex
+    width: 100%
+    max-height: 50%
+    img
+      width: 100%
+      height: auto
+  .heroInfoDiv
+    position: relative
+    padding: 15px
+    height: 100%
+    .joinTeamButton
+      position: absolute
+      right: 10px
+      top: -20px
+      padding: 7px
+      border-radius: 50%
+      filter: drop-shadow(0px 2px 2px $default_border)
+    .heroInfoTexts
+      display: flex
+      flex-direction: column
+      height: 100%
+    .heroName
+      max-width: 80%
+      font-size: 17px
+      font-weight: bold
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .heroDescription
+      margin: 0
+      margin-top: 5px
+      max-width: 90%
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+      overflow: hidden
+      font-size: 10px
+

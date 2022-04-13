@@ -1,0 +1,60 @@
+@use '../../styles/themes/light' as *
+
+.banner
+  display: flex
+  justify-content: center
+  background-image: url('../../assets/bannerBackground.png')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  width: 100%
+  height: 330px
+
+.bannerContainer
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  span
+    display: flex
+    flex-wrap: wrap
+    color: $header_text
+    max-width: 270px
+    font-size: 22px
+    font-weight: 700
+    margin-bottom: 25px
+    margin-right: 200px
+  .searchInputWrapper
+    display: flex
+    .searchInput
+      border: none
+      border-top-left-radius: 2px
+      border-bottom-left-radius: 12px
+      padding: 5px 10px
+      height: 30px
+      width: 400px
+    .searchButton
+      background-color: $button_background
+      color: $button_text
+      border-top-right-radius: 12px
+      border-bottom-right-radius: 2px
+      padding: 12px 20px
+
+.herosList
+  display: flex
+  justify-content: center
+  width: 100%
+  padding: 5px
+  .heroListContainer
+    display: flex
+    flex-direction: column
+    .headerHerosList
+      display: flex
+      width: 100%
+      justify-content: space-between
+      align-items: center
+      h3
+        font-size: 22px
+        line-height: 25px
+      span
+        font-weight: bold
