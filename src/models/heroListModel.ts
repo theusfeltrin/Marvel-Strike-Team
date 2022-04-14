@@ -1,6 +1,6 @@
-import { Hero } from "."
+import { HeroModel } from "."
 
-export interface HeroList {
+export interface HeroListModel {
   code: number,
   status: string,
   copyright: string,
@@ -11,7 +11,7 @@ export interface HeroList {
     limit: number,
     total: number,
     count: number,
-    results: Hero[]
+    results: HeroModel[]
   },
   etag: string
 }

@@ -1,0 +1,49 @@
+@use '../../styles/themes/light' as *
+
+.cardWrapper
+  display: flex
+  width: 1170px
+  height: 300px
+  border-radius: 10px 50px
+  overflow: hidden
+  background-color: $card_background
+  box-shadow: 0px 4px 4px $default_border
+  color: $card_text
+  .cardContent
+    display: flex
+    height: 190px
+    padding: 56px 70px 54px 100px
+  .heroImgDiv
+    display: flex
+    margin-right: 39px
+    img
+      width: 200px
+      height: 188.09px
+      border-radius: 50%
+      border: 1px solid $default_border
+  .heroInfoDiv
+    position: relative
+    height: 100%
+    color: $card_text
+    .heroInfoTexts
+      display: flex
+      flex-direction: column
+      height: 100%
+    .heroName
+      color: $card_text
+      max-width: 761px
+      font-weight: 700
+      font-size: 42px
+      line-height: 49px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .heroDescription
+      margin: 20px 0px 0px 0px
+      width: 761px
+      height: 109px
+      overflow: hidden
+      font-weight: 400
+      font-size: 24px
+      line-height: 28px
+

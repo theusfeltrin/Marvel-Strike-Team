@@ -1,50 +1,71 @@
 @use '../../styles/themes/light' as *
 
-.cardWrapper
+.miniCardWrapper
   display: flex
   flex-direction: column
-  width: 23%
-  height: 300px
-  border-radius: 6px 12px
+  width: 270px
+  height: 376px
+  border-radius: 10px 30px
   overflow: hidden
-  margin: 10px 0px
+  background-color: $card_background
   box-shadow: 0px 4px 4px $default_border
-  .heroImgDiv
+  color: $card_text
+  &:nth-of-type(-n+4)
+    margin-bottom: 52px
+  .miniHeroImgDiv
     display: flex
-    width: 100%
-    max-height: 50%
+    width: 270px
+    height: 198.8px
     img
       width: 100%
       height: auto
-  .heroInfoDiv
+  .miniHeroInfoDiv
     position: relative
-    padding: 15px
+    padding: 21px 30px 0px 21px
     height: 100%
     .joinTeamButton
       position: absolute
       right: 10px
       top: -20px
-      padding: 7px
+      width: 54px
+      height: 54px
       border-radius: 50%
+      background-color: $card_button_background
       filter: drop-shadow(0px 2px 2px $default_border)
-    .heroInfoTexts
+    .removeTeamButton
+      position: absolute
+      right: 10px
+      top: -20px
+      width: 54px
+      height: 54px
+      border-radius: 50%
+      background-color: $button_background
+      filter: drop-shadow(0px 2px 2px $default_border)
+    .miniHeroInfoTexts
       display: flex
       flex-direction: column
       height: 100%
-    .heroName
+      color: $card_text
+      text-decoration: none
+    .miniHeroName
       max-width: 80%
-      font-size: 17px
-      font-weight: bold
+      font-weight: 700
+      font-size: 32px
+      line-height: 38px
       white-space: nowrap
       overflow: hidden
       text-overflow: ellipsis
-    .heroDescription
+      cursor: pointer
+    .miniHeroDescription
       margin: 0
       margin-top: 5px
-      max-width: 90%
+      width: 100%
       display: -webkit-box
       -webkit-line-clamp: 3
       -webkit-box-orient: vertical
       overflow: hidden
-      font-size: 10px
+      font-weight: 400
+      font-size: 16px
+      line-height: 19px
+      cursor: pointer
 

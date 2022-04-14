@@ -1,15 +1,25 @@
+@use '../styles/themes/light' as *
+
 body
   margin: 0
   padding: 0
+  display: flex
+  justify-content: center
   font-family: 'Roboto', sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
+  position: relative
 
 button
   border: none
 
+.App
+  width: 1600px
+  height: 1800px
+  background-color: $main_background
+
 .container
   display: flex
-  width: 90%
   justify-content: center
+  width: 73%
 

@@ -1,16 +1,15 @@
-import { HeroList } from "../../../models";
-import { heroMiniCard } from "../heroMiniCard";
+import { HeroListModel, HeroModel } from "../../../models";
+import { HeroMiniCard } from '../';
 import './heroListStyles.sass'
 
 
-export const heroList = (heroList: HeroList) => {
-  console.log(heroList)
+export const HeroList = (heroList: HeroListModel, page: string) => {
   if (heroList.data === undefined) {
     return (<p>No heros here</p>)
   }
   return (
     <div className="bodyHerosList">
-      {heroList.data.results?.map(hero => heroMiniCard(hero))}
+      {heroList.data.results?.map((hero: HeroModel) => HeroMiniCard(hero, page))}
     </div>
   )
 }

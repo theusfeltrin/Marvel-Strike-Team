@@ -4,6 +4,7 @@ import { Provider as ReduxProvider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import { store, persistor } from './store'
 import { Routes } from './routes'
+import './styles/index.sass'
 
 function App() {
   return (

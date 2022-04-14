@@ -2,12 +2,12 @@ import { Reducer } from 'redux'
 import { produce } from 'immer'
 import { ReducerProps, SetHeroTeamParams } from './interfaces'
 import { ReduxActions } from './actions'
-import { Hero } from '../../models'
+import { HeroModel } from '../../models'
 
 const INITIAL_STATE: ReducerProps = {
   heroTeam: {
     name: '',
-    heros_team: [] as Hero[]
+    heros_team: [] as HeroModel[]
   }
 }
 

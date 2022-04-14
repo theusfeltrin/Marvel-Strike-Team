@@ -1,18 +1,18 @@
 import { useState } from "react";
-import { GetHeroListParams, HeroList } from "../../../models";
+import { GetHeroListParams, HeroListModel } from "../../../models";
 import { api } from '../../../infra/api'
 import { MD5 } from "crypto-js";
 import { getParamsToString } from "../../../helpers";
 import { format } from 'date-fns'
 
-export interface UseHeroReturn {
-  data: HeroList
+export interface UseHeroListReturn {
+  data: HeroListModel
   loading: boolean
   getHeroList: (params: GetHeroListParams) => void
 }
 
-export function useHerosList(): UseHeroReturn {
-  const [data, setData] = useState({} as HeroList)
+export function useHerosList(): UseHeroListReturn {
+  const [data, setData] = useState({} as HeroListModel)
   const [loading, setLoading] = useState(false)
 
  async function getHeroList(params: GetHeroListParams) {

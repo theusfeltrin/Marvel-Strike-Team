@@ -8,37 +8,49 @@
   background-position: center
   background-size: cover
   width: 100%
-  height: 330px
+  height: 491px
 
-.bannerContainer
+.homeBannerContainer
   display: flex
   flex-direction: column
-  align-items: center
+  align-items: flex-start
   justify-content: center
+  width: 47%
+  padding: 132px 0px 163px
   span
     display: flex
     flex-wrap: wrap
     color: $header_text
-    max-width: 270px
-    font-size: 22px
+    width: 500px
     font-weight: 700
-    margin-bottom: 25px
-    margin-right: 200px
+    font-size: 42px
+    line-height: 49px
+    margin-bottom: 38px
   .searchInputWrapper
     display: flex
+    width: 670px
+    height: 70px
+    border-radius: 5px 20px
+    overflow: hidden
+    background-color: $button_background
     .searchInput
       border: none
-      border-top-left-radius: 2px
-      border-bottom-left-radius: 12px
-      padding: 5px 10px
-      height: 30px
-      width: 400px
+      padding: 0px
+      padding-left: 30px
+      height: 100%
+      flex: 1
+      font-weight: 400
+      font-size: 24px
+      line-height: 28px
+      &:active
+        border: none
     .searchButton
       background-color: $button_background
       color: $button_text
-      border-top-right-radius: 12px
-      border-bottom-right-radius: 2px
-      padding: 12px 20px
+      width: 93.82px
+      height: 70px
+      padding: 21px 33px 21px 34px
+      border-radius: 5px 20px 5px 0px
 
 .herosList
   display: flex
@@ -53,8 +65,12 @@
       width: 100%
       justify-content: space-between
       align-items: center
-      h3
-        font-size: 22px
-        line-height: 25px
+      margin: 34px 0px 42px
+      span:first-of-type
+        font-weight: 700
+        font-size: 42px
+        line-height: 49px
       span
-        font-weight: bold
+        font-weight: 700
+        font-size: 24px
+        line-height: 28px

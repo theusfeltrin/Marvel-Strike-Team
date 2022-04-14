@@ -1,53 +1,53 @@
-export interface ComicItem {
+export interface ComicItemModel {
   resourceURI: string,
   name: string
 }
 
-export interface Comics {
+export interface ComicsModel {
   available: number,
   returned: number,
   collectionURI: string,
-  items: ComicItem[]
+  items: ComicItemModel[]
 }
 
-export interface StorieItems {
+export interface StorieItemsModel {
   resourceURI: string,
   name: string,
   type: string
 }
 
-export interface Stories {
+export interface StoriesModel {
   available: number,
   returned: number,
   collectionURI: string,
-  items: StorieItems[]
+  items: StorieItemsModel[]
 }
 
-export interface EventItems {
+export interface EventItemsModel {
   resourceURI: string,
   name: string
 }
 
-export interface Events {
+export interface EventsModel {
   available: number,
   returned: number,
   collectionURI: string,
-  items: EventItems[]
+  items: EventItemsModel[]
 }
 
-export interface SerieItems {
+export interface SerieItemsModel {
   resourceURI: string,
   name: string
 }
 
-export interface Series  {
+export interface SeriesModel  {
   available: number,
   returned: number,
   collectionURI: string,
-  items: SerieItems[]
+  items: SerieItemsModel[]
 }
 
-export interface Hero {
+export interface HeroModel {
   id: number,
   name: string,
   description: string,
@@ -63,8 +63,8 @@ export interface Hero {
     path: string,
     extension: string
   },
-  comics: Comics,
-  stories: Stories,
-  events: Events,
-  series: Series
+  comics: ComicsModel,
+  stories: StoriesModel,
+  events: EventsModel,
+  series: SeriesModel
 }

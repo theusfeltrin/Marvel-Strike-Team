@@ -1,34 +1,34 @@
 import { useState } from "react";
-import { HeroModel } from "../../../models";
+import { HeroComicsListModel } from "../../../models";
 import { api } from '../../../infra/api'
 import { format } from "date-fns";
 import { MD5 } from "crypto-js";
 
-export interface UseHeroReturn {
-  data: HeroModel
+export interface UseHeroComicsReturn {
+  data: HeroComicsListModel
   loading: boolean
-  getHero: (heroId: number) => void
+  getHeroComics: (heroId: number) => void
 }
 
-export function useHero(): UseHeroReturn {
-  const [data, setData] = useState({} as HeroModel)
+export function useHeroComics(): UseHeroComicsReturn {
+  const [data, setData] = useState({} as HeroComicsListModel)
   const [loading, setLoading] = useState(false)
 
- async function getHero(heroId: number) {
+ async function getHeroComics(heroId: number) {
    if (!heroId) {
      return
    }
    setLoading(true)
    const ts = format(new Date(), 'yyyyMMdd')
    const md5_hash = MD5(ts + process.env.REACT_APP_MARVEL_API_PRIVATE_KEY + process.env.REACT_APP_MARVEL_API_PUBLIC_KEY)
-   let baseUrl = `/characters/${heroId}?ts=${ts}&apikey=${process.env.REACT_APP_MARVEL_API_PUBLIC_KEY}&hash=${md5_hash}`
+   let baseUrl = `/characters/${heroId}/comics?ts=${ts}&apikey=${process.env.REACT_APP_MARVEL_API_PUBLIC_KEY}&hash=${md5_hash}`
    api
     .get(baseUrl)
     .then((response) => {
+      console.log(response)
       if (response.status === 200) {
-        const heroReturn = response.data.data.results
-        const heroData = heroReturn[0]
-        setData(heroData)
+        const comicsReturn = response.data
+        setData(comicsReturn)
       }
     })
     .catch((err) => {
@@ -37,5 +37,5 @@ export function useHero(): UseHeroReturn {
     setLoading(false)
  }
 
-  return {data, loading, getHero}
+  return {data, loading, getHeroComics}
 }
