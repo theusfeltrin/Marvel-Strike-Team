@@ -43,7 +43,7 @@ export const HeroComicsCard = (comic: HeroComicsModel) => {
             </div>
           </div>
           <p className="comicDescription">
-            {comic.description.substring(0, 200)}
+            {comic.description ? comic.description.substring(0, 200) : ''}
           </p>
         </div>
       </div>
