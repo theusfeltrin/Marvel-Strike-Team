@@ -22,10 +22,9 @@ export function useHeroComics(): UseHeroComicsReturn {
    const ts = format(new Date(), 'yyyyMMdd')
    const md5_hash = MD5(ts + process.env.REACT_APP_MARVEL_API_PRIVATE_KEY + process.env.REACT_APP_MARVEL_API_PUBLIC_KEY)
    let baseUrl = `/characters/${heroId}/comics?ts=${ts}&apikey=${process.env.REACT_APP_MARVEL_API_PUBLIC_KEY}&hash=${md5_hash}`
-   api
+   await api
     .get(baseUrl)
     .then((response) => {
-      console.log(response)
       if (response.status === 200) {
         const comicsReturn = response.data
         setData(comicsReturn)

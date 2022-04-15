@@ -22,7 +22,7 @@ export function useHero(): UseHeroReturn {
    const ts = format(new Date(), 'yyyyMMdd')
    const md5_hash = MD5(ts + process.env.REACT_APP_MARVEL_API_PRIVATE_KEY + process.env.REACT_APP_MARVEL_API_PUBLIC_KEY)
    let baseUrl = `/characters/${heroId}?ts=${ts}&apikey=${process.env.REACT_APP_MARVEL_API_PUBLIC_KEY}&hash=${md5_hash}`
-   api
+   await api
     .get(baseUrl)
     .then((response) => {
       if (response.status === 200) {

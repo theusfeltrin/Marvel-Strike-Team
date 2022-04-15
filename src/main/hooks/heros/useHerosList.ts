@@ -25,7 +25,7 @@ export function useHerosList(): UseHeroListReturn {
     baseUrl += getParamsToString(params)
    }
 
-   api
+   await api
     .get(baseUrl)
     .then((response) => {
       if (response.status === 200) {
@@ -36,7 +36,6 @@ export function useHerosList(): UseHeroListReturn {
     .catch((err) => {
       console.error(`Erro ${err}`)
     })
-
     setLoading(false)
  }
 

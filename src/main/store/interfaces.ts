@@ -1,7 +1,7 @@
 import { HeroModel } from "../../models"
 
 export interface ReducerProps {
-  heroTeam:{
+  yourTeam:{
     name: string
     heros_team: HeroModel[]
   }

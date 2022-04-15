@@ -3,8 +3,13 @@ import { createStore, Store } from 'redux'
 import { persistStore, persistReducer } from 'redux-persist'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import reducer from './reducer'
+import { HeroModel } from '../../models'
 
 export interface AppState {
+  yourTeam: {
+    name: string
+    heros_team: HeroModel[]
+  }
 }
 
 const persistConfig = {

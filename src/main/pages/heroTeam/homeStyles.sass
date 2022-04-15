@@ -10,53 +10,42 @@
   width: 100%
   height: 491px
 
-.homeBannerContainer
+.heroTeamBannerContainer
   display: flex
   flex-direction: column
-  align-items: flex-start
-  justify-content: center
-  width: 47%
-  padding: 132px 0px 163px
-  span
+  justify-content: flex-start
+  .heroTeamBannerTitle
+    margin: 43px 0px 0px 35px
+    span
+      display: flex
+      flex-wrap: wrap
+      color: $header_text
+      width: 500px
+      font-weight: 700
+      font-size: 42px
+      line-height: 49px
+  .heroTeamReturnLinkDiv
     display: flex
-    flex-wrap: wrap
-    color: $header_text
-    width: 500px
-    font-weight: 700
-    font-size: 42px
-    line-height: 49px
-    margin-bottom: 38px
-  .searchInputWrapper
-    display: flex
-    width: 670px
-    height: 70px
-    border-radius: 5px 20px
-    overflow: hidden
-    background-color: $button_background
-    .searchInput
-      border: none
-      padding: 0px
-      padding-left: 30px
-      height: 100%
-      flex: 1
-      font-weight: 400
+    width: 100%
+    justify-content: right
+    margin-top: 10px
+    .heroTeamReturnLink
+      font-weight: 700
       font-size: 24px
       line-height: 28px
-      &:active
-        border: none
-    .searchButton
-      background-color: $button_background
-      color: $button_text
-      width: 93.82px
-      height: 70px
-      padding: 21px 33px 21px 34px
-      border-radius: 5px 20px 5px 0px
+      color: $banner_return_link
+      text-decoration: none
+    svg
+      margin-left: 10px
+      width: 20px
+      height: 9px
 
-.herosList
+.herosTeamList
   display: flex
   justify-content: center
   width: 100%
   padding: 5px
+  transform: translateY(-245px)
   .heroListContainer
     display: flex
     flex-direction: column
@@ -74,14 +63,14 @@
         font-weight: 700
         font-size: 24px
         line-height: 28px
-  .homePaginationDiv
+  .herosTeamPaginationDiv
     display: flex
     width: 100%
     justify-content: right
     margin-top: 23px
-    .homePageNumbers
+    .herosTeamPageNumbers
       margin-right: 169px
-      .homePageNumber
+      .herosTeamPageNumber
         font-weight: 700
         font-size: 24px
         line-height: 28px
@@ -94,9 +83,9 @@
         font-size: 24px
         line-height: 28px
         margin-right: 10px
-      .homePageSelected
+      .herosTeamPageSelected
         color: $main_text_selected
-    .homePrevNextPages
+    .herosTeamPrevNextPages
       span
         font-weight: 700
         font-size: 24px
@@ -104,6 +93,6 @@
         cursor: pointer
         &:first-of-type
           margin-right: 27px
-    .homePageDisable
+    .herosTeamPageDisable
       cursor: not-allowed !important
       opacity: 0.5
