@@ -1,12 +1,12 @@
 # Marvel Striker Team
 This application allows the user to search for the most iconics marvels characters, read informations about them, read about their comics and formate your own striker team.
 
-![Thumbnail GitHub]()
+![Thumbnail GitHub](https://github.com/theusfeltrin/Marvel-Strike-Team/blob/5039830cd98bfcb3de691e3b5a7f9d0275fd130e/.github/images/marvel_strike_team_logo.png)
 
 ## Front-End
 
 The front-end of the project has been made on ReactJs with TypeScript, Redux and Sass, following the provide template and assets from:
-[Link for the prototypo and assets on Figma](https://figma.com/file/b7EzpqbYSCIjj2OFHPGCqY/Live-On-Challenge-Frontend-React)
+[Link for the prototype and assets on Figma](https://figma.com/file/b7EzpqbYSCIjj2OFHPGCqY/Live-On-Challenge-Frontend-React)
 
 ## API
   Api used for the back-end of the project was provide by the free use api from marvels developer
@@ -32,4 +32,4 @@ The front-end of the project has been made on ReactJs with TypeScript, Redux and
 - On **Your Team** page, a list of the charactes that you selected to your strike team are showed like the home page, every character with their own card wit a **image**, a litte **description** and a button to remove them from the team.
 
 ## Project Preview
- - Project Live Preview:
+ [Project Live Preview](https://marvelstriketeamtest.netlify.app)
