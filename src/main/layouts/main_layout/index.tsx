@@ -14,11 +14,15 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
     navigate('/yourTeam')
   }
 
+  function handleClickLogo () {
+    navigate('/')
+  }
+
   return (
     <div className='wrapper'>
       <header className='header'>
         <div className="container headersContainer">
-          <div className="logo">
+          <div className="logo" onClick={handleClickLogo}>
             <img src={ironmanIcon} alt="iron man mask icon" />
             <span>Marvel Strike Team</span>
           </div>
