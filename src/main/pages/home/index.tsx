@@ -147,7 +147,7 @@ export const Home = () => {
 
   // change number of page by click on the numbers
   function onPageChange(pageNumber: number) {
-    if (!loading) {
+    if (loading) {
       return
     }
     setNewPageNumberToParams(pageNumber - 1)
