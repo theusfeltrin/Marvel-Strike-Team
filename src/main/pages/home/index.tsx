@@ -102,7 +102,7 @@ export const Home = () => {
 
   // trigger search function on key Enter press
   function handleEnterOnInput(e: React.KeyboardEvent<HTMLInputElement>) {
-    if (!loading) {
+    if (loading) {
       return
     }
     if (e.key === 'Enter') {
@@ -112,7 +112,7 @@ export const Home = () => {
 
   // change the offset of getParams
   function setNewPageNumberToParams(pageNumber: number) {
-    if (!loading) {
+    if (loading) {
       return
     }
     setCurrentPage(pageNumber)
@@ -125,7 +125,7 @@ export const Home = () => {
 
   // handle of change Page down
   function handleOnPageDownChange() {
-    if (!loading) {
+    if (loading) {
       return
     }
     if (currentPage > 0) {
@@ -136,7 +136,7 @@ export const Home = () => {
 
   // handle of change Page up
   function handleOnPageUpChange() {
-    if (!loading) {
+    if (loading) {
       return
     }
     if (currentPage + 1 < totalOfPages) {
